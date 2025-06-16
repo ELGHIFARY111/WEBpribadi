@@ -1,0 +1,108 @@
+body{
+    font-family: verdana, arial, helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    margin: auto;  
+}
+
+#box_judul{
+    position:fixed;
+    height: 7%;
+    width: 100%;
+    background-color: lightcyan;
+    padding-top: 40px; 
+    padding-bottom: 0px; 
+    padding-left: 0,03px;
+    padding-right: 0,03px;
+    line-height: 0px; 
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-width: 7px;
+    border-bottom-style:groove;
+    border-color: aqua;
+}
+.teks_judul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 0%;
+}
+#box_nav_top {
+    position:static;
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    line-height: 0.1px;
+    padding: 20px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: aqua;
+}
+
+#stylelink_top a{
+    color:black;
+    margin-left: 20px;
+    font-size: 30px;
+    display:inline-block;
+    padding-top: 90px;
+    text-decoration: none;
+    font-family: 'monospace';
+}
+#stylelink_right a{
+    color:black;
+    font-family: 'monospace';
+    margin-left: 0,2px;
+    font-size: 17px;
+    text-decoration: none;
+    display:ruby;
+}
+
+#box_nav_right {
+    background-color: white;
+    height: 83% auto;
+    width: 15%;
+    line-height: 0.1px;
+    padding: 20px;
+    padding-left: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: aqua;
+}
+
+#box_content {
+    height: 83%;
+    width: 85%;
+    padding: 10px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color:aqua;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-bottom-width:1px ;
+}
+.text3{
+    font-size: 16px;
+}
+#footer {
+    height: 7%;
+    width: 100%;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-width: 7px;
+    border-top-style:groove;
+    border-color: aqua;
+    background-color: lightblue;
+    padding:5px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    font-family: 'Segoe UI', 'Tahoma, Geneva', 'Verdana', 'sans-serif';
+
+}
