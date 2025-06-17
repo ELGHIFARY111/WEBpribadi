@@ -1,124 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>24-108_MOHAMMAD ELGHIFARY</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body BGCOLOR="white">
-    <div id="box_judul">
-        <span class="teks_judul">
-            <center>about me</center>
-        </span>
-    </div>
-    <div id="box_nav_top">
-        <span class="teks1">Navigasi Atas </span><p>  
+<body>
+    <div class="atas">
+        <div id="box_judul">
+            <span class="teks_judul">about me</span>
+        </div>
+        <div id="box_nav_top">
+            <span class="teks1">Navigasi Atas</span>
             <div id="stylelink_top">
-              <a href="#interface">project</a>
-              <a href="#info">komentar</a>
+                <a href="#" onclick="showSection('perkenalan')">Perkenalan</a>
+                <a href="#" onclick="showSection('team')">Team</a>
+                <a href="#" onclick="showSection('interface')">Project</a>
+                <a href="#" onclick="showSection('komentar')">Komentar</a>
             </div>
+        </div>
     </div>
     <div class="container">
         <div id="box_content">
-            <span class="text">
-                <table>
-                    <tr>
-                        <td rowspan="2"><img src="mukakecil-removebg-preview.png" align="right"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Hi,</h2>
-                            <a>Perkenalkan nama saya <b>MOHAMMAD ELGHIFARY</b>,</a><br>
-                            <a>dengan nomor nim <b>2404111001018</b></a><br>
-                            <a>saya sedang belajar<b> Dasar Pemrograman Web</b> di kelas<b> DPW F</b></a><br>
-                            <a>dan saya tergabung dalam<b> KELOMPOK 3</b></a>
-                        </td>
-                    </tr>
-                </table>
-                <font size="35" face="Tahoma" color="grey">WEBSITE TOP-UP GAME</font><br>
-                <a>Dalam project ini kami kelompok 3 akan membuat sebuah website beranama "6fussion" yang melayani jasa top up game, seperti mobile legends, dan free fire.<br> Website ini akan memberikan pengalaman TOP-UP yang lancar dan aman bagi para user.</a><br>
-                <h3>Di bawah ini adalah beberapa interface yang akan kami kerjakan</h3>       
-                <table border="1" align="left" id="interface">
-                    <tr>
-                        <th>INTERFACE</th>
-                        <th>KETERANGAN</th>
-                    </tr>
-                    <tr>
-                        <td>ABOUT US</td>
-                        <td>Halaman yang berisi informasi tentang tim pengembang proyek web DPW, yaitu 6fussion.</td>
-                    </tr>
-                    <tr>
-                        <td>FAQ</td>
-                        <td>Halaman yang menjelaskan pertanyaan umum seputar layanan, transaksi, dan cara penggunaan.</td>
-                    </tr>
-                    <tr>
-                        <td>LIVE CHAT</td>
-                        <td>Fitur untuk berkomunikasi langsung dengan tim dukungan kami secara real-time.</td>
-                    </tr>
-                    <tr>
-                        <td>Laporkan</td>
-                        <td>Halaman untuk mengunggah laporan terkait masalah layanan.</td>
-                    </tr>
-                    <tr>
-                        <td>Ketentuan dan Privasi</td>
-                        <td>Halaman yang memuat kebijakan privasi serta syarat dan ketentuan penggunaan layanan.</td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <font id="info" size="25" face="Tahoma" color="grey">Komentar</font><br>    
-                <form action="#" method="post">
-                    <label for="nama">NAMA :</label>
-                    <input type="text" id="nama" name="nama"><br><br>
-            
-                    <label>JENIS KELAMIN :</label><br>
-                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-                    <label for="perempuan">Perempuan</label><br>
-                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-Laki">
-                    <label for="laki-laki">Laki-Laki</label><br><br>
-            
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email"><br><br>
-            
-                    <label>Minat:</label><br>
-                    <input type="checkbox" id="programming" name="minat" value="Pemrograman">
-                    <label for="programming">Pemrograman</label><br>
-                    <input type="checkbox" id="manajemen" name="minat" value="Manajemen">
-                    <label for="manajemen">Manajemen</label><br>
-                    <input type="checkbox" id="sosial" name="minat" value="Sosial">
-                    <label for="sosial">Sosial</label><br><br>
-            
-                    <label for="komentar">Komentar:</label><br>
-                    <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea><br><br>
-            
-                    <input type="submit" value="Simpan">
-                </form>
-          </span>
+        <!-- Perkenalan -->
+        <div id="perkenalan" class="section">
+            <table class="perkenalan">
+                <tr>
+                    <td rowspan="2"><img src="/asset/mukakecil-removebg-preview.png" class="fotoku" /></td>
+                    <td>
+                        <h2>Hi,</h2>
+                        <p>Perkenalkan nama saya <b>MOHAMMAD ELGHIFARY</b>, NIM <b>2404111001018</b>, mahasiswa kelas <b>DPW F</b>, kelompok <b>3</b>.</p>
+                        <p><strong>WEBSITE TOP-UP GAME "6FUSSION"</strong></p>
+                    </td>
+                </tr>
+            </table>
         </div>
-            </span> 
-        <div id="box_nav_right">
-            <span class="text3"><h2>Contact</h2></span>
-            <br>
-            <p>
-                <div id="stylelink_right">
-                    <a href="https://wa.me/6287758668209" target="_blank">WhatsApp</a><p>
-                    <br><p>
-                    <a href="https://www.instagram.com/elghifary12" target="_blank">instgram</a><p>
+        <!-- team -->
+        <div id="team" class="section">
+            <div class="kelompok">KELOMPOK 3</div>
+            <div class="team-wrapper">
+                <div class="team-card">
+                    <div class="team1">
+                        <img class="foto" src="/asset/fotoTeam/raihan.png">
+                    </div>
+                    <div class="info">
+                    <p class="name">KETUA KELOMPOK</p>
+                    <p class="name">RAIHAN ARYANOVA NARENDRA</p>
+                    <p class="name">240411100094</p>
+                    <a href="" class="link1">Website Pribadi</a>
+                    </div>
                 </div>
-        </div>    
+                <div class="team-card">
+                    <div class="team2">
+                        <img class="foto" src="/asset/fotoTeam/roni.png">
+                    </div>
+                    <div class="info">
+                    <p class="name">MOCH. ZAMRONI FAHREZA</p>
+                    <p class="name">240411100085</p>
+                    <a href="https://moch-zamroni-fahreza.vercel.app/" class="link2">Website Pribadi</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team3">
+                        <img class="foto" src="/asset/fotoTeam/elghi.jpg">
+                    </div>
+                    <div class="info">
+                    <p class="name">MOHAMMAD ELGHIFARY</p> 
+                    <p class="name">240411100108</p> 
+                    <a href="https://we-bpribadi.vercel.app/" class="link3">Website Pribadi</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team4">
+                        <img class="foto" src="/asset/fotoTeam/iman.png">                    
+                    </div>
+                    <div class="info">
+                    <p class="name">MUHAMMAD FATHUL IMAN WAHID</p>                      
+                    <p class="name">240411100180</p>  
+                    <a href="" class="link4">Website Pribadi</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team5">
+                        <img class="foto" src="/asset/fotoTeam/rendi.jpg">               
+                    </div>
+                    <div class="info">
+                    <p class="name">Rendi Yulistio Firmansyah</p>                
+                    <p class="name">240411100149</p> 
+                    <a href="https://rendi-yf.vercel.app/" class="link5">Website Pribadi</a>>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team6">
+                        <img class="foto" src="/asset/fotoTeam/rayyan.png">                 
+                    </div>
+                    <div class="info">
+                    <p class="name">ACH RAYYAN</p>                   
+                    <p class="name">240411100188</p>  
+                    <a href="https://ach-rayyan.vercel.app/" class="link6">Website Pribadi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Interface -->
+        <div id="interface" class="section" style="display:none;">
+            <font size="35" face="Tahoma" color="grey">WEBSITE TOP-UP GAME "6FUSSION""</font><br>
+            <a>Dalam project ini kami kelompok 3 akan membuat sebuah website beranama <strong>"6fussion"</strong> yang melayani jasa top up game, seperti mobile legends, dan free fire.Website ini juga akan berisi game-game online yang sangat menarik dan dilengkapi dengan fitur leaderboard serta live-chat dengan pemain lain agar meningkatkan daya tarik, 6fussion akan memberikan pengalaman TOP-UP yang lancar dan aman bagi para user.</a><br>
+            <h3>Interface yang akan dikerjakan</h3>
+            <table class="listinter">
+                <tr><th>INTERFACE</th><th>KETERANGAN</th></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/about-us">ABOUT US🔗<br><br><img src="/asset/about-us.png" style="width: 400px; height: 270px;"></a></td><td>Menampilkan informasi tentang tim pengembang proyek.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/faq">FAQ🔗<br><br><img src="/asset/faq.png" style="width: 400px; height: 270px;"></a></td><td>Menjawab pertanyaan umum seputar layanan dan penggunaan website.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/live-chat">Live Chat🔗<br><br><img src="/asset/livechat.png" style="width: 400px; height: 270px;"></a></td><td>Fitur untuk berkomunikasi langsung dengan pengguna lain secara real-time, preview yang saya tunjukkan adalah tamplan ketika dipanggil secara langsung sedangkan seharusnya dipanggil di game</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/laporkan">Laporkan🔗<br><br><img src="/asset/laporkan.png" style="width: 400px; height: 270px;"></a></td><td>Formulir untuk melaporkan kendala atau masalah pada layanan.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/syarat&ketentuan">syarat dan Ketentuan🔗<br><br><img src="/asset/syaratdanketentuan.png" style="width: 400px; height: 270px;"></a></td><td>Menampilkan syarat dan ketentuan untuk penggunaan.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/kebijakanPrivasi">kebijakan privasi🔗<br><br><img src="/asset/kebijakanpivasi.png" style="width: 400px; height: 270px;"></a></td><td>Menampilkan  kebijakan privasi secara lengkap.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/select-game">Select Game🔗<br><br><img src="/asset/selectgame.png" style="width: 400px; height: 270px;"></a></td><td>Menampilkan daftar game online yang tersedia untuk dipilih oleh pengguna.</td></tr>
+                <tr><td><a href="https://proyek-dpw-production.up.railway.app/dashboard-admin">Dashboard Admin🔗<br><br><img src="/asset/dashboard-admin.png" style="width: 400px; height: 270px;"></a></td><td>Halaman khusus admin untuk mengelola konten, transaksi, dan pengguna.</td></tr>
+            </table>
+        </div>
+        <!-- Komentar -->
+        <div id="komentar" class="section" style="display:none;">
+            <h3>Komentar</h3>
+            <form id="form-komentar">
+                <label>Nama:</label><input type="text" id="nama"><br>
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki<br>
+                <label>Email:</label><input type="email" id="email"><br>
+                <label>Minat:</label><br>
+                <input type="checkbox" value="Pemrograman"> Pemrograman
+                <input type="checkbox" value="Manajemen"> Manajemen
+                <input type="checkbox" value="Sosial"> Sosial<br>
+                <label>Komentar:</label><br>
+                <textarea id="komentar-text"></textarea><br>
+                <input type="submit" value="Simpan">
+            </form>
+            <div id="output_komentar"></div>
+        </div>
+    </div>
+
+    <div id="box_nav_right">
+        <h2>Contact</h2>
+        <div id="stylelink_right">
+            <a href="https://wa.me/6287758668209" target="_blank">WhatsApp</a><br>
+            <a href="https://www.instagram.com/elghifary12" target="_blank">Instagram</a>
+        </div>
+    </div>
     </div>
     <div id="footer">
-        <p align="center">Copyright © 2023 Mohammad Elghifary<br>
-            Email: elgifaryamink@gmail.com<br>
-            All rights reserved.</p>
+        <p>Copyright © 2023 Mohammad Elghifary - elgifaryamink@gmail.com</p>
     </div>
+    <script>
+    function showSection(id) {
+        document.querySelectorAll('.section').forEach(div => {
+            div.style.display = div.id === id ? 'block' : 'none';
+        });
+    }
+    document.getElementById("form-komentar").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const komentar = document.getElementById("komentar-text").value;
+        const jenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked')?.value || "-";
+        const minat = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(cb => cb.value);
+        const komentarHTML = `
+            <div class="output-box">
+                <strong>${nama}</strong> (${email})<br>
+                <em>${jenisKelamin}</em> - Minat: ${minat.join(", ") || "-"}<br>
+                <p>${komentar}</p>
+            </div>
+        `;
+        document.getElementById("output_komentar").innerHTML += komentarHTML;
+        this.reset();
+    });
+    </script>
 </body>
 </html>

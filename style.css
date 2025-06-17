@@ -1,108 +1,242 @@
-body{
-    font-family: verdana, arial, helvetica, sans-serif;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-    margin: auto;  
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000000;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-#box_judul{
-    position:fixed;
-    height: 7%;
-    width: 100%;
-    background-color: lightcyan;
-    padding-top: 40px; 
-    padding-bottom: 0px; 
-    padding-left: 0,03px;
-    padding-right: 0,03px;
-    line-height: 0px; 
-    border-bottom-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    border-bottom-width: 7px;
-    border-bottom-style:groove;
-    border-color: aqua;
+/* JUDUL */
+#box_judul {
+    background-color: #28248c;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #622aff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 6px #622aff;
 }
-.teks_judul{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:black;
+
+.teks_judul {
+    font-size: 42px;
+    font-weight: bold;
     font-style: italic;
-    font-size: 50px;
-    padding-top: 0%;
+    color: #ffff00;
 }
+
+/* NAVIGASI ATAS */
 #box_nav_top {
-    position:static;
-    background-color: white;
-    height: 10%;
-    width: 100%;
-    line-height: 0.1px;
-    padding: 20px;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: aqua;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    border-bottom: 2px solid #622aff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 6px #622aff;
 }
 
-#stylelink_top a{
-    color:black;
-    margin-left: 20px;
-    font-size: 30px;
-    display:inline-block;
-    padding-top: 90px;
-    text-decoration: none;
-    font-family: 'monospace';
-}
-#stylelink_right a{
-    color:black;
-    font-family: 'monospace';
-    margin-left: 0,2px;
-    font-size: 17px;
-    text-decoration: none;
-    display:ruby;
+.teks1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffff00;
 }
 
-#box_nav_right {
-    background-color: white;
-    height: 83% auto;
-    width: 15%;
-    line-height: 0.1px;
+#stylelink_top a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ffff00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#stylelink_top a:hover {
+    color: #ffffff;
+}
+
+/* KONTEN UTAMA */
+.container {
+    display: flex;
     padding: 20px;
-    padding-left: 30px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: aqua;
+    gap: 20px;
+    flex: 1;
 }
 
 #box_content {
-    height: 83%;
-    width: 85%;
-    padding: 10px;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-color:aqua;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-top-style: dotted;
-    border-top-width: 1px;
-    border-bottom-width:1px ;
+    flex: 1;
+    background: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #28248c;
+    box-shadow: 0 4px 6px black;
 }
-.text3{
+
+#box_nav_right {
+    width: 250px;
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #28248c;
+    box-shadow: 0 4px 6px black;
+}
+
+#stylelink_right a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffff00;
+    text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#stylelink_right a:hover {
+    color: #ffffff;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #28248c;
+    color: #ffff00;
+}
+
+td {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+/* HEADINGS */
+h2, h3 {
+    color: #ffff00;
+}
+
+/* FORM */
+form {
+    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border: 1px solid #622aff;
+    border-radius: 4px;
+}
+
+.kirim {
+    background-color: #ffff00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.kirim:hover{
+    background-color:  #8ad22e;
 }
 #footer {
-    height: 7%;
+    background-color: #28248c;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top: 5px solid #622aff;
+    color: #ffff00;
+    margin-top: 40px;
     width: 100%;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
-    border-top-width: 7px;
-    border-top-style:groove;
-    border-color: aqua;
-    background-color: lightblue;
-    padding:5px;
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-.text{
-    font-family: 'Segoe UI', 'Tahoma, Geneva', 'Verdana', 'sans-serif';
 
+.fotoku{
+    background-color: #622aff;
+    border-radius: 40px;
+    border: 3px solid #ffff00;
+
+}
+.perkenalan{
+    width: fit-content;
+    margin-left: 40px;
+}
+.listinter a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.listinter a:hover{
+    color:#ffff00;
+}
+#team{
+    display: none;
+}
+.foto{
+    width: 155px;
+    height: 220px;
+    border-radius: 40px;
+    border: 3px solid #ffff00;
+}
+.team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.kelompok{
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+}
+.team-card {
+    display: flex;
+    gap: 1rem;
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 4px 12px black;
+    width: 300px;
+    margin: 0;
+}
+.team-card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team-card .info a{
+    text-decoration: none;
+    color: yellow;
+}
+.team-card .info a:hover{
+    text-decoration: none;
+    color: blue;
 }
