@@ -240,3 +240,11 @@ textarea {
     text-decoration: none;
     color: blue;
 }
+.linkweb{
+    color:yellow;
+    text-decoration: none;
+}
+.linkweb:hover{
+    color: blue;
+    text-decoration: none;
+}
